@@ -1,8 +1,10 @@
 import { lazy } from 'react'
 import authRoute from './authRoute'
 import othersRoute from './othersRoute'
+import sharedRoutes from './sharedRoutes'
 import type { Routes } from '@/@types/routes'
 
+// authRoute already includes sharedRoutes
 export const publicRoutes: Routes = [...authRoute]
 
 export const protectedRoutes: Routes = [
@@ -47,11 +49,6 @@ export const protectedRoutes: Routes = [
         ),
         authority: [],
     },
-    {
-        key: 'homePage',
-        path: `/hello`,
-        component: lazy(() => import('@/views/Home')),
-        authority: []
-    },
     ...othersRoute,
+    ...sharedRoutes, // This includes the homePage route with path: '/'
 ]

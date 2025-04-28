@@ -1,5 +1,6 @@
 import { lazy } from 'react'
 import type { Routes } from '@/@types/routes'
+import sharedRoutes from './sharedRoutes'
 
 const authRoute: Routes = [
     {
@@ -26,12 +27,7 @@ const authRoute: Routes = [
         component: lazy(() => import('@/views/auth/ResetPassword')),
         authority: [],
     },
-    {
-        key: 'homePage',
-        path: `/hello`,
-        component: lazy(() => import('@/views/Home')),
-        authority: []
-    },
+  
 ]
 
-export default authRoute
+export default [...authRoute, ...sharedRoutes]
