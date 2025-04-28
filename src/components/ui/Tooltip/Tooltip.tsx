@@ -96,7 +96,7 @@ const Tooltip = (props: TooltipProps) => {
                                 className,
                             )}
                             initial={{
-                                opacity: 0,
+                                opacity:10,
                                 visibility: 'hidden',
                             }}
                             animate={
@@ -106,7 +106,7 @@ const Tooltip = (props: TooltipProps) => {
                                           visibility: 'visible',
                                       }
                                     : {
-                                          opacity: 0,
+                                          opacity:10,
                                           visibility: 'hidden',
                                       }
                             }

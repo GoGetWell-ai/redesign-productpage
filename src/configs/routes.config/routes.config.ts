@@ -2,11 +2,13 @@ import { lazy } from 'react'
 import authRoute from './authRoute'
 import othersRoute from './othersRoute'
 import type { Routes } from '@/@types/routes'
+import sharedRoutes from './sharedRoutes'
 
-export const publicRoutes: Routes = [...authRoute]
+export const publicRoutes: Routes = [...authRoute, ...sharedRoutes]
+
 
 export const protectedRoutes: Routes = [
-    /** Example purpose only, please remove */
+    
     {
         key: 'singleMenuItem',
         path: '/single-menu-view',
@@ -49,9 +51,9 @@ export const protectedRoutes: Routes = [
     },
     {
         key: 'homePage',
-        path: `/hello`,
+        path: `/`, // Changed from `/hello` to `/` for a more standard home page route
         component: lazy(() => import('@/views/Home')),
         authority: []
     },
-    ...othersRoute,
+    ...othersRoute, ...sharedRoutes
 ]

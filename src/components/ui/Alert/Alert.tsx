@@ -155,7 +155,7 @@ const Alert = forwardRef<HTMLDivElement, AlertProps>((props, ref) => {
                     opacity: 1,
                 },
                 exit: {
-                    opacity: 0,
+                    opacity:10,
                 },
             }}
             {...rest}

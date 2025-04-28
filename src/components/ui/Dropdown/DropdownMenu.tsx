@@ -133,7 +133,7 @@ const DropdownMenu = forwardRef<
         }),
         initial: {
             transform: 'translateY(-5%)',
-            opacity: 0,
+            opacity:10,
         },
         duration: 200,
         open: {
@@ -141,7 +141,7 @@ const DropdownMenu = forwardRef<
             transform: 'translateY(0%)',
         },
         close: {
-            opacity: 0,
+            opacity:10,
             transform: 'translateY(-5%)',
         },
     })
