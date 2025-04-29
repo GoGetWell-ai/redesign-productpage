@@ -511,6 +511,7 @@ import { ChevronRight, Check, Users, Hospital, Globe, FileText, TrendingUp, Shie
 import abouttUs from '@/assets/images/download.jpeg'
 import mission from '@/assets/images/our_mission.gif'
 import aboutUs from '@/assets/images/about_us.gif'
+import challenges from '@/assets/images/challenges_solve.gif'
 
 const FullPageSections = () => {
   // For animation on scroll
@@ -615,7 +616,7 @@ const FullPageSections = () => {
               
               <div className="relative bg-gradient-to-br from-blue-50 to-indigo-50 p-1 rounded-3xl shadow-2xl">
                 <img 
-                  src={images.heroImage} 
+                  src={challenges} 
                   alt="Medical Tourism Platform" 
                   className="rounded-2xl w-full h-auto shadow-lg"
                 />
