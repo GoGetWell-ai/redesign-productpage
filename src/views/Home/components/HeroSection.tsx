@@ -118,6 +118,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                                                 Get Started
                                             </Button>
                                         }
+                                        hcfLogin={true}
                                         />
                                 </div>
                                 <div className=" flex gap-12  p-[4px] mt-12 flex-wrap">
