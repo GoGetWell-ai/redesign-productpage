@@ -47,11 +47,5 @@ export const protectedRoutes: Routes = [
         ),
         authority: [],
     },
-    {
-        key: 'homePage',
-        path: `/hello`,
-        component: lazy(() => import('@/views/Home')),
-        authority: []
-    },
     ...othersRoute,
 ]
