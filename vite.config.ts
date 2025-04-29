@@ -22,6 +22,7 @@ export default defineConfig({
     }
   },
   build: {
-    outDir: 'build'
+    outDir: 'dist', // Vite by default uses 'dist'
+    chunkSizeWarningLimit: 1000, // Optional: silence large chunk warning
   }
 })
