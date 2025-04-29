@@ -6,7 +6,7 @@ import MainFooter from './components/MainFooter';
 import InfoSection from './components/InfoSection';
 import FeaturesGrid from './components/FeaturesGrid';
 import ClaimLandingSection from './components/ClaimLandingSection';
-import Side from '@/components/layouts/AuthLayout/Side';
+
 
 const Home: React.FC = () => {
 	const contactRef = useRef(null);
