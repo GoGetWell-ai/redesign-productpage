@@ -2,7 +2,6 @@ import { BrowserRouter } from 'react-router-dom'
 import Theme from '@/components/template/Theme'
 import Layout from '@/components/layouts'
 import { AuthProvider } from '@/auth'
-import Views from '@/views'
 import appConfig from './configs/app.config'
 import './locales'
 import Home from './views/Home'
@@ -17,15 +16,7 @@ function App() {
             <BrowserRouter>
                 <AuthProvider>
                     <Layout>
-                        {/* <Views /> */}
                         <Home/>
-                        {/* <HeroSection/>
-                        {/* <ClaimLandingSection/> */}
-                        {/* <FullPageSections/>
-                        <FeaturesGrid/>
-                        <FAQ/>
-                        <ContactForm/>
-                        <MainFooter/> */} 
                     </Layout>
                 </AuthProvider>
             </BrowserRouter>
