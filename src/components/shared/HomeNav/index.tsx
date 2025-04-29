@@ -155,15 +155,21 @@ const HomeNavbar: React.FC<HomeNavbarProps> = ({
 								) : (
 									<>
 										<div className="mt-3">
-											<Button
+											<HcfSignupPopup 
+											popupButtonStatus
+											buttonChildren={
+												<Button
 												onClick={() =>
 													navigate('/store')
 												}
 												block
 												className="rounded-[5px]"
-											>
+												>
 												Login
 											</Button>
+											}
+											hcfLogin={true}
+											/>
 										</div>
 
 										<div className="mt-3">
@@ -205,15 +211,22 @@ const HomeNavbar: React.FC<HomeNavbarProps> = ({
 								</div>
 							) : (
 								<div className="flex items-center space-x-4">
-									<Button
+									<HcfSignupPopup
+									popupButtonStatus
+									buttonChildren={
+
+										<Button
 										onClick={() =>
 											navigate('/store')
 										}
 										block
 										className="rounded-[5px]"
-									>
+										>
 										Login
 									</Button>
+									}
+									hcfLogin={true}
+									/>
 
 									<HcfSignupPopup
 										popupButtonStatus
