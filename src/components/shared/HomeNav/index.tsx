@@ -91,8 +91,8 @@ const HomeNavbar: React.FC<HomeNavbarProps> = ({
 	}, [pathname]);
 
 	return (
-		<nav className={`w-full`}>
-			<div className="max-w-[1538px] mx-auto px-4 w-full">
+		<nav className={`w-full fixed z-50`}>
+			<div className="w-screen relative    px-4 bg-gradient-to-r  from-blue-600 via-blue-500 to-blue-700">
 				<div className="flex justify-between h-16 items-center">
 					{/* Logo */}
 					<div className="flex-shrink-0 flex items-center">
@@ -108,7 +108,7 @@ const HomeNavbar: React.FC<HomeNavbarProps> = ({
 						{menuItems.map((item) => (
 							<li
 								key={item.text}
-								className={`text-[#ffffffc9] list-none transition-all duration-300 hover:text-primary cursor-pointer`}
+								className={`text-white  text-lg list-none transition-all duration-300 hover:text-black cursor-pointer`}
 								onClick={() => (scrollToSection && item.ref) ? scrollToSection(item.ref) : navigate('/?scrollTo=' + item.text)}
 							>
 								{item.text}
@@ -140,7 +140,7 @@ const HomeNavbar: React.FC<HomeNavbarProps> = ({
 									}}
 								>
 									<div className="relative overflow-hidden">
-										<div className={`text-lg font-medium text-gray-800 hover:text-primary transition-all duration-300 cursor-pointer hover:translate-x-2`}>
+										<div className={`text-lg font-medium text-gray-800 hover:text-primary transition-all duration-300 cursor-pointer hover:translate-x-2 `}>
 											{item.icon} {item.text}
 										</div>
 										<div className="absolute bottom-0 h-0.5 w-full bg-primary transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300" />

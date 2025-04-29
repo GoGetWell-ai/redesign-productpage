@@ -1,4 +1,4 @@
-import PatientSignUpPopup from '@/views/auth/PatientSignUp/Popup';
+// import PatientSignUpPopup from '@/views/auth/PatientSignUp/Popup';
 import React from 'react';
 import { BiBot, BiGlobe, BiMessageSquare, BiTrendingUp } from 'react-icons/bi';
 import { CgLock } from 'react-icons/cg';
@@ -17,7 +17,7 @@ const ClaimLandingSection = () => {
 
     return (
         <div className="bg-gradient-to-br from-white to-blue-50">
-            <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 ">
                 {/* Features Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 mb-16">
                     {features.map((feature, index) => (
@@ -58,9 +58,9 @@ const ClaimLandingSection = () => {
                             placeholder="GoGetWell.ai/your_name"
                             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
                         />
-                        <PatientSignUpPopup hcfLogin popupButtonStatus buttonChildren={<button className="w-full bg-primary text-white py-3 px-6 rounded-lg font-semibold transition-colors duration-300">
-                            Join the Waiting List
-                        </button>} />
+                        {/* <PatientSignUpPopup hcfLogin popupButtonStatus buttonChildren={<button className="w-full bg-primary text-white py-3 px-6 rounded-lg font-semibold transition-colors duration-300"> */}
+                            {/* Join the Waiting List */}
+                        {/* </button>} /> */}
                     </div>
                 </div>
             </div>
