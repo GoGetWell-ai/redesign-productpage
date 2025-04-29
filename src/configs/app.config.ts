@@ -1,3 +1,6 @@
+export const appConfig = {
+  defaultPath: '/', // Changed from '/hello'
+};
 export type AppConfig = {
     apiPrefix: string
     authenticatedEntryPath: string
