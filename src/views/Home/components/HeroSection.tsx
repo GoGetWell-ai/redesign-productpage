@@ -545,7 +545,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                         <motion.div className="w-full lg:w-1/2 text-white space-y-8" variants={itemVariants}>
                             {/* Badge */}
                             <motion.div 
-                                className="inline-flex items-center px-4 py-2 space-x-2 bg-gradient-to-r from-blue-600/20 to-indigo-600/20 backdrop-blur-md rounded-full border border-blue-500/20" 
+                                className="inline-flex items-center px-4 py-2 space-x-2 bg-gradient-to-r from-blue-600/20 to-indigo-600/20  backdrop-blur-md rounded-full border border-blue-500/20" 
                                 variants={itemVariants}
                             >
                                 <span className="flex h-2 w-2 rounded-full bg-blue-400"></span>
@@ -553,13 +553,29 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                             </motion.div>
                             
                             {/* Headline */}
-                            <motion.h1 
-                                className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight" 
+                            {/* <motion.h1 
+                                className="text-5xl md:text-6xl lg:text-7xl font-bold  " 
                                 variants={itemVariants}
                             >
                                 <span className="block">The <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400">AI-Powered</span></span>
-                                <span className="block">Healthcare Platform</span>
-                            </motion.h1>
+                                <span className="block  ">Healthcare Platform</span>
+                            </motion.h1> */}
+
+
+<motion.h1 
+    className="text-5xl md:text-6xl lg:text-7xl font-bold" 
+    variants={itemVariants}
+>
+    <span className="block">
+           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400">AI-Powered</span>
+    </span>
+    <span className="block">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400">Healthcare Platform</span>
+    </span>
+</motion.h1>
+
+
+
                             
                             {/* Description */}
                             <motion.p 
