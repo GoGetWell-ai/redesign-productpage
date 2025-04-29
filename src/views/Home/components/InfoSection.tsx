@@ -830,7 +830,7 @@ const FullPageSections = () => {
                 
                 <div className="relative z-10 rounded-3xl overflow-hidden p-1 bg-gradient-to-tr from-purple-500/20 via-white to-blue-500/20 shadow-2xl">
                   <img
-                    src={images.challenges}
+                    src={aboutUs}
                     alt="Challenges we solve"
                     className="w-full h-auto rounded-2xl object-cover"
                   />
