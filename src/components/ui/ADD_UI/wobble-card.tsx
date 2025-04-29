@@ -1,19 +1,16 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utlis"; 
 
 export const WobbleCard = ({
   children,
-  containerClassName,
   className,
 }: {
   children: React.ReactNode;
   containerClassName?: string;
   className?: string;
 }) => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [isHovering, setIsHovering] = useState(false);
 
   return (
    
