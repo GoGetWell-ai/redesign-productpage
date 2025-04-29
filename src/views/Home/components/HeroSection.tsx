@@ -5,7 +5,7 @@ import HcfSignupPopup from '@/components/shared/Popups/HcfSignupPopup'
 import Side from '@/components/layouts/AuthLayout/Side'
 import FullPageSections from './InfoSection'
 import ClaimLandingSection from './ClaimLandingSection'
-import { WobbleCard } from '@/components/ui/ADD_UI/wobble-card'
+import { WobbleCard } from '@/components/ui/ADD_UI/wobble_card' 
 
 interface HeroSectionProps {
     scrollToSection: (ref: React.RefObject<HTMLElement>) => void
