@@ -1,58 +1,83 @@
-import { FaTwitter, FaLinkedinIn } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
+import { FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 interface LinkItem {
-    text: string
-    path: string
+  text: string;
+  path: string;
 }
 
 const links: LinkItem[] = [
-    { text: 'Privacy Policy', path: '/privacy-policy' },
-    { text: 'Terms of Service', path: '/terms-of-service' },
-    { text: 'Pricing Policy', path: '/pricing-policy' },
-    { text: 'Editor Policy', path: '/editor-policy' },
-]
+  { text: 'Privacy Policy', path: '/privacy-policy' },
+  { text: 'Terms of Service', path: '/terms-of-service' },
+  { text: 'Pricing Policy', path: '/pricing-policy' },
+  { text: 'Editor Policy', path: '/editor-policy' },
+];
 
 const MainFooter: React.FC = () => {
-    return (
-        <footer className=" border-gray-200 p-4">
-            <div className="w-full flex flex-wrap items-center justify-between mx-auto p-2 600px:px-12">
-                {/* Copyright for all screen sizes */}
-                <h1 className="text-sm text-black md:hidden text-center w-full">
-                    ©{new Date().getFullYear()} gogetwell.ai
-                </h1>
-                <h1 className="text-xs text-black hidden md:block">
-                    ©{new Date().getFullYear()} gogetwell.ai
-                </h1>
-                <ul className="mt-4 md:mt-0 flex gap-x-3 flex-wrap gap-y-3 mx-auto">
-                    {links.map((item, i) => (
-                        <li
-                            key={i}
-                            className="text-black hover:underline hover:text-blue-500 text-xs text-center"
-                        >
-                            <Link to={`${item.path}`}>{item.text}</Link>
-                        </li>
-                    ))}
-                </ul>
-                <div className="items-center gap-2 md:gap-8 hidden md:flex">
-                    <Link
-                        to="https://x.com/gogetwellai"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <FaTwitter size={25} className="text-primary" />
-                    </Link>
-                    <Link
-                        to="https://www.linkedin.com/company/gogetwellai/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <FaLinkedinIn size={25} className="text-primary" />
-                    </Link>
-                </div>
-            </div>
-        </footer>
-    )
-}
+  const currentYear = new Date().getFullYear();
 
-export default MainFooter
+  return (
+    <footer className="border-t bg-white">
+      <div className="container mx-auto px-6 py-12">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+          {/* Logo and Brand */}
+          <div className="flex items-center gap-3">
+            <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center shadow-md">
+              <span className="text-white font-bold text-lg">GW</span>
+            </div>
+            <span className="text-gray-700 font-semibold text-base">
+              © {currentYear} gogetwell.ai
+            </span>
+          </div>
+
+          {/* Footer Links */}
+          <ul className="flex flex-wrap justify-center gap-6 text-sm font-medium text-gray-500">
+            {links.map((item, i) => (
+              <li key={i}>
+                <Link
+                  to={item.path}
+                  className="hover:text-indigo-600 transition-colors"
+                >
+                  {item.text}
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          {/* Socials */}
+          <div className="flex items-center gap-4">
+            <a
+              href="https://x.com/gogetwellai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center justify-center h-10 w-10 rounded-full border border-gray-200 hover:bg-indigo-50 transition"
+            >
+              <FaTwitter
+                size={18}
+                className="text-gray-500 group-hover:text-indigo-600 transition-colors"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/gogetwellai/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center justify-center h-10 w-10 rounded-full border border-gray-200 hover:bg-indigo-50 transition"
+            >
+              <FaLinkedinIn
+                size={18}
+                className="text-gray-500 group-hover:text-indigo-600 transition-colors"
+              />
+            </a>
+          </div>
+        </div>
+
+        {/* Bottom text for mobile */}
+        <div className="mt-10 text-center text-xs text-gray-400 md:hidden">
+          All rights reserved.
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default MainFooter;

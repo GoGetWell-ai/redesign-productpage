@@ -9,6 +9,7 @@ import { useAuth } from '@/auth'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import type { LayoutType } from '@/@types/theme'
 
+
 interface ViewsProps {
     pageContainerType?: 'default' | 'gutterless' | 'contained'
     layout?: LayoutType
