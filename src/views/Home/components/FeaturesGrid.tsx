@@ -75,11 +75,11 @@ const FeaturesGrid: React.FC = () => {
 export default FeaturesGrid;
 
 
-@keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
-@keyframes slideInDown { from {opacity: 0; transform: translateY(-20px);} to {opacity: 1; transform: translateY(0);} }
-@keyframes fadeLift { from {opacity: 0; transform: translateY(20px);} to {opacity: 1; transform: translateY(0);} }
+// @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+// @keyframes slideInDown { from {opacity: 0; transform: translateY(-20px);} to {opacity: 1; transform: translateY(0);} }
+// @keyframes fadeLift { from {opacity: 0; transform: translateY(20px);} to {opacity: 1; transform: translateY(0);} }
 
 
-.animate-fadeIn { animation: fadeIn 0.8s ease-out forwards; }
-.animate-slideInDown { animation: slideInDown 0.8s ease-out forwards; }
-.animate-fadeLift { animation: fadeLift 0.8s ease-out forwards; }
+// .animate-fadeIn { animation: fadeIn 0.8s ease-out forwards; }
+// .animate-slideInDown { animation: slideInDown 0.8s ease-out forwards; }
+// .animate-fadeLift { animation: fadeLift 0.8s ease-out forwards; }
