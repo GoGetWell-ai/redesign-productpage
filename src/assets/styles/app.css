@@ -3,3 +3,46 @@
 @import "./template/index.css";
 @import "./vendors/index.css";
 @import "./tailwind/index.css";
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-out both;
+}
+
+.primary-color {
+  color: #FF6B6B;
+}
+.bg-accent {
+  background-color: #FFEBD6;
+}
+.warm-bg {
+  background-color: #FFF7F0;
+}
+.text-neutral {
+  color: #333;
+}
+
+@keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+@keyframes slideInDown { from {opacity: 0; transform: translateY(-20px);} to {opacity: 1; transform: translateY(0);} }
+@keyframes fadeLift { from {opacity: 0; transform: translateY(20px);} to {opacity: 1; transform: translateY(0);} }
+
+
+.animate-fadeIn { animation: fadeIn 0.8s ease-out forwards; }
+.animate-slideInDown { animation: slideInDown 0.8s ease-out forwards; }
+.animate-fadeLift { animation: fadeLift 0.8s ease-out forwards; }

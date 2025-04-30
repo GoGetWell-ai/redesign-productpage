@@ -91,7 +91,7 @@ const HomeNavbar: React.FC<HomeNavbarProps> = ({
 	}, [pathname]);
 
 	return (
-		<nav className={`w-full`}>
+		<nav className={`w-full bg-green-600`}>
 			<div className="max-w-[1538px] mx-auto px-4 w-full">
 				<div className="flex justify-between h-16 items-center">
 					{/* Logo */}
@@ -104,7 +104,7 @@ const HomeNavbar: React.FC<HomeNavbarProps> = ({
 						/>
 					</div>
 
-					<div className="hidden lg:flex space-x-8">
+					<div className="hidden lg:flex space-x-8 pl-4 ml-4 translate-x-[350px]" >
 						{menuItems.map((item) => (
 							<li
 								key={item.text}
