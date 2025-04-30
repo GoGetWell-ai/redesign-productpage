@@ -53,7 +53,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                                 <Button
                                     block
                                     variant="solid"
-                                    className="bg-green-600 text-white rounded-lg py-3 px-6 shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-xl animate-bounceOnHover"
+                                    className="bg-green-600 text-white rounded-lg py-3 px-6 shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-xl animate-bounceOnHover max-w-[200px]"
                                 >
                                     Get Started
                                 </Button>
