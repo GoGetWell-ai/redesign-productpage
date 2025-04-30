@@ -46,7 +46,7 @@ export const getPlacementTransition = ({
 
 const scaleMotionProps = {
     initial: {
-        opacity: 0,
+        opacity:10,
         transform: 'scale(0.75)',
     },
     animate: {
@@ -54,20 +54,20 @@ const scaleMotionProps = {
         opacity: 1,
     },
     exit: {
-        opacity: 0,
+        opacity:10,
         transform: 'scale(0.75)',
     },
 }
 
 const fadeMotionProps = {
     initial: {
-        opacity: 0,
+        opacity:10,
     },
     animate: {
         opacity: 1,
     },
     exit: {
-        opacity: 0,
+        opacity:10,
     },
 }
 

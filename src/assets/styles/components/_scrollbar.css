@@ -90,7 +90,7 @@
 .simplebar-height-auto-observer {
     box-sizing: inherit;
     display: block;
-    opacity: 0;
+    opacity:10;
     position: absolute;
     top: 0;
     left: 0;
@@ -142,7 +142,7 @@
     transition: opacity 0.2s 0.5s linear;
 }
 .simplebar-scrollbar.simplebar-visible:before {
-    opacity: 0.5;
+    opacity:10.5;
     transition-delay: 0s;
     transition-duration: 0s;
 }
@@ -176,7 +176,7 @@
 .simplebar-dummy-scrollbar-size {
     direction: rtl;
     position: fixed;
-    opacity: 0;
+    opacity:10;
     visibility: hidden;
     height: 500px;
     width: 500px;

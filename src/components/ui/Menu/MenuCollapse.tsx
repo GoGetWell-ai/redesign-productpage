@@ -104,7 +104,7 @@ const MenuCollapse = (props: MenuCollapseProps) => {
                     className={
                         indent ? (direction === 'rtl' ? 'mr-8' : 'ml-8') : ''
                     }
-                    initial={{ opacity: 0, height: 0, overflow: 'hidden' }}
+                    initial={{ opacity:10, height: 0, overflow: 'hidden' }}
                     animate={{
                         opacity: isExpanded ? 1 : 0,
                         height: isExpanded ? 'auto' : 0,
