@@ -187,8 +187,8 @@ const FullPageSections = () => {
 
 
     return (
-        <div className="scroll-smooth max-w-[1538px] mx-auto">
-            <div className="w-full max-w-7xl mx-auto px-4 py-20 flex flex-col gap-y-32">
+        <div className="scroll-smooth max-w-screen mx-auto">
+            <div className="w-full max-w-7xl mx-auto px-4  flex flex-col gap-y-32">
                 <div className="flex flex-col lg:flex-row gap-8 items-center">
                     {/* Image Section */}
                     <div className="w-full lg:w-1/2 flex items-center justify-center">

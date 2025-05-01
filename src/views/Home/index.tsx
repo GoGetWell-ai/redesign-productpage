@@ -5,6 +5,8 @@ import ContactForm from './components/ContactForm';
 import MainFooter from './components/MainFooter';
 import InfoSection from './components/InfoSection';
 import FeaturesGrid from './components/FeaturesGrid';
+import ClaimLandingSection from './components/ClaimLandingSection';
+
 
 const Home: React.FC = () => {
 	const contactRef = useRef(null);
@@ -47,31 +49,32 @@ const Home: React.FC = () => {
 	return (
 		<>
 			<div>
-				<div className="">
+				<div className=" bg-white">
+					
 					<HeroSection
 						scrollToSection={scrollToSection}
 						featuresRef={FqRef}
 						contactRef={contactRef}
 						aboutRef={aboutRef}
 					/>
-					{/* <div className='bg-white'>
-						<ClaimLandingSection />
-					</div> */}
-					<div className='!bg-[#eff6ff] relative'>
+					<div className='bg-white'>
+						<ClaimLandingSection/>
+					</div>
+					<div className='!bg-[#eff6ff] '>
 						<FeaturesGrid />
 					</div>
-					<div className='!bg-white relative' ref={aboutRef}>
+					<div className='!bg-white ' ref={aboutRef}>
 						<InfoSection />
 					</div>
-					<div className='relative bg-white' ref={FqRef}>
+					<div className=' bg-white' ref={FqRef}>
 						<HomeFAQs />
 					</div>
-					<div className='bg-white relative' ref={contactRef}>
+					<div className='bg-white' ref={contactRef}>
 						<ContactForm />
 					</div>
-					{/* <div className='bg-white'>
+					<div className='bg-white'>
 						<MainFooter />
-					</div> */}
+					</div>
 				</div>
 			</div>
 		</>
